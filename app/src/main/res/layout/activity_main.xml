@@ -4,21 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="horizontal">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="377dp"
+       android:layout_weight="1"
+       android:baselineAligned="false">
+
+      <fragment
+          android:id="@+id/fragment2"
+          android:name="com.example.pertemuan2_fragment.fragment2"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:visibility="visible" />
+
+      <fragment
+          android:id="@+id/fragment4"
+          android:name="com.example.pertemuan2_fragment.fragment4"
+          android:layout_width="299dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:visibility="visible" />
+
+   </LinearLayout>
 
    <fragment
        android:id="@+id/fragment1"
        android:name="com.example.pertemuan2_fragment.fragment1"
-       android:layout_width="0px"
-       android:layout_height="match_parent"
-       android:layout_weight="1" />
+       android:layout_width="match_parent"
+       android:layout_height="8dp"
+       android:layout_weight="1"
+       android:visibility="visible" />
+
    <fragment
-       android:id="@+id/fragment2"
-       android:name="com.example.pertemuan2_fragment.fragment2"
-       android:layout_width="0px"
-       android:layout_height="match_parent"
-       android:layout_weight="1" />
+       android:id="@+id/fragment3"
+       android:name="com.example.pertemuan2_fragment.fragment3"
+       android:layout_width="match_parent"
+       android:layout_height="36dp"
+       android:layout_weight="1"
+       android:visibility="visible" />
 
 
 </LinearLayout>
